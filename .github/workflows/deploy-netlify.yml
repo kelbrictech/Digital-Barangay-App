@@ -1,4 +1,4 @@
-name: Deploy Digital Barangay to Netlify
+name: Package Digital Barangay for Netlify
 
 on:
   push:
@@ -9,14 +9,21 @@ permissions:
   contents: read
 
 jobs:
-  deploy:
+  package:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Deploy to Netlify
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: 87417f6b-ba66-40fb-881b-da8f60c1541c
-        run: npx --yes netlify-cli@latest deploy --prod --dir . --site "$NETLIFY_SITE_ID"
+      - name: Remove Git metadata and temporary workflow
+        run: |
+          rm -rf .git
+          rm -f .github/workflows/deploy-netlify.yml
+
+      - name: Upload deployment package
+        uses: actions/upload-artifact@v4
+        with:
+          name: digital-barangay-netlify-package
+          path: .
+          include-hidden-files: true
+          retention-days: 1
