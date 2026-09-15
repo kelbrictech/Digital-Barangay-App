@@ -1,6 +1,11 @@
 # Changelog
 
-All notable changes to Digital Barangay are documented here.
+All notable changes to VICO are documented here.
+
+## Unreleased
+
+### Changed
+- Adopted the VICO product identity across the frontend while preserving the existing resident, administrator, and webmaster workflows.
 
 The project follows Semantic Versioning for portfolio release management.
 
@@ -57,7 +62,7 @@ Both frontend and backend production commits are marked with the immutable `v1.1
 - Admin operations portal with resident, document-request, and concern management.
 - Persistent upper-right logout controls across authenticated portals.
 - Shared responsive application shell and civic design system.
-- Live frontend integration with the deployed Digital Barangay backend and database.
+- Live frontend integration with the deployed VICO backend and database.
 
 ### Security
 - Role-mode symmetry enforced before session creation.

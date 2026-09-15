@@ -1,12 +1,12 @@
-# Digital Barangay App — Frontend
+# VICO — Frontend
 
-A full-stack Digital Barangay resident, administrator, and credential-governance portal for Barangay San Isidro.
+VICO is a community member-facing service delivery application for Barangay San Isidro, with protected resident, administrator, and credential-governance portals.
 
 ## Current release
 
 **v1.1.0 — live in production**
 
-**GitHub Pages:** https://kelbrictech.github.io/Digital-Barangay-App/
+**GitHub Pages:** https://kelbrictech.github.io/VICO/
 
 **Backend API:** https://digital-barangay-backend.onrender.com/
 
@@ -103,7 +103,7 @@ The public frontend consumes the live Render API; application records persist in
 
 For backend setup, data model and deployment details, see the companion repository:
 
-https://github.com/kelbrictech/digital-barangay-backend
+https://github.com/kelbrictech/vico-backend
 
 ## Project status
 
