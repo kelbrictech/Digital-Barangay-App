@@ -6,9 +6,11 @@ VICO is a community member-facing service delivery application for Barangay San 
 
 **v1.1.0 — live in production**
 
-**GitHub Pages:** https://kelbrictech.github.io/VICO/
+**GitHub Pages:** https://kelbrictech.github.io/Digital-Barangay-App/
 
 **Backend API:** https://digital-barangay-backend.onrender.com/
+
+The repository and deployed-service slugs remain stable infrastructure identifiers; the application identity is VICO.
 
 ## What it does
 
@@ -103,7 +105,7 @@ The public frontend consumes the live Render API; application records persist in
 
 For backend setup, data model and deployment details, see the companion repository:
 
-https://github.com/kelbrictech/vico-backend
+https://github.com/kelbrictech/digital-barangay-backend
 
 ## Project status
 
